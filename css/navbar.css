@@ -1,0 +1,74 @@
+body {
+	width: 100%;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar {
+	width: 100%;
+	background-color: white;
+	height: 100px;
+	position: fixed;
+	top:2px;
+	margin-bottom: 10px;
+}
+#logo{
+	width: 100px;
+	height: 100px;
+	margin-top: 0px;
+	margin-left: 40px;
+	
+}
+#banner{
+	float: right;
+	width: 400px;
+	height: 90px;
+	margin-right: 80px;
+}
+.navbar-collapse{
+	padding: 0px;
+}
+.container{
+	width: 100%;
+	padding: 0px;
+}
+.navbar-brand{
+	padding: 0px 10px 0px 100px;
+}
+
+input[type=text] {
+    width: 500px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../img/searchicon.png');
+    background-position: 15px 3px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.jumbotron{
+	padding-top: 0px;
+	width: 100%;
+}
+#menu{
+	background-color: white;
+	border: 1px solid black;
+	width: 100%;
+}
+.dropdown{
+	margin-left: 100px;
+	border-top: none;
+	border-bottom: 1px black;
+}
+.navbar-right{
+	margin-right:80px;
+}
+.jssor_1{
+	width: 700px;
+}
