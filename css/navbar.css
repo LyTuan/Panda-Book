@@ -26,6 +26,16 @@ body {
 	height: 90px;
 	margin-right: 80px;
 }
+
+#banner {
+    position: absolute;
+  }
+
+  #logo {
+    position: relative;
+    bottom: 15px;
+  }
+  
 .navbar-collapse{
 	padding: 0px;
 }
@@ -35,6 +45,7 @@ body {
 }
 .navbar-brand{
 	padding: 0px 10px 0px 100px;
+	background-color: 
 }
 
 input[type=text] {
@@ -55,6 +66,7 @@ input[type=text] {
 .jumbotron{
 	padding-top: 0px;
 	width: 100%;
+	background-color: #ffffff;
 }
 #menu{
 	background-color: white;
@@ -71,4 +83,10 @@ input[type=text] {
 }
 .jssor_1{
 	width: 700px;
+}
+fluid > .navbar-collapse {
+    margin-right: 0;
+    border: 1px black;
+    margin-left: 0;
+    background-color: #e7e7e7;
 }

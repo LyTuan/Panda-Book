@@ -1,0 +1,74 @@
+.title-cart {
+	border-bottom: solid #C9C9C9 1px;
+}
+.show-item {
+	border-bottom: solid #C9C9C9 1px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.panel-pay {
+	background-color: #F0F0F0;
+	border: solid #C9C9C9 1px;
+}
+.subtotal {
+	float: right;
+	margin: 5px;
+}
+.text-subtotal {
+	font-weight: bold;
+	font-size: 125%;
+}
+.text-money {
+	font-weight: bold;
+	font-size: 125%;
+	color: #b30000;
+}
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
+}
+.panel-pay>* {
+	margin: 10px;
+}
+.panel-gift-code {
+	border: solid #C9C9C9 1px;
+	border-top: none;
+}
+.btn-gift {
+	border: none;
+	background-color: white;
+	padding: 10px;
+	font-weight: bold;
+}
+.collapse-gift {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.collapse-gift>* {
+	margin-bottom: 10px;
+}
+.pay-sign {
+	border-top: solid #C9C9C9 1px;
+	margin-top: 20px;
+	padding-top: 10px;
+	text-align:center;
+}
+.book-name {
+	font-weight: bold;
+	font-size: 110%;
+}
+#sel-quantily {
+	border-radius: 3px;
+	padding: 2px;
+	width: 55%
+}
+a:hover {
+	color: #EB471A;
+	text-decoration: none;
+}
+.item-availability {
+	color: #1C9C1E;
+	font-size: 90%;
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chi-tiet</title>
+  <meta charset="utf-8">
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/icon.jpg">
+
+    
+    <title>Panda-Book</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script> -->
+    <script type="text/javascript" src="js/libraryJQuery.js"></script>
+
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+
+    <!-- tooltipster Ptuan -->
+    <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+    
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+    <script src="js/myjavascript.js" type="text/javascript" charset="utf-8" async defer ></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>  
+    
+	<!-- <title>list image</title> -->
+	<!-- <meta charset="utf-8"> -->
+
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+	<script>
+
+		window.onload = function (){
+            resize();
+        };
+		
+
+		function showToolTip(x) {
+			var tooltips = x.getElementsByClassName('tooltip');
+			tooltips[0].style.display = "inline-block";
+		}
+
+		function hideToolTip(x) {
+
+			var tooltips = x.getElementsByClassName('tooltip');
+			tooltips[0].style.display = "none";
+		}
+	</script>
+</head>
+
+<body>
+ <div class="container">
+
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="logo" class="xs-hid" id="logo"></a>
+          </div>
+          <input type="text" >
+          <img src="img/banner_02.jpg" alt="banner"  id="banner">
+          <br>
+          <br>
+          <br>
+          <div class="container"></div>
+          <div id="navbar" class="navbar-collapse collapse brown">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">Home/a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li> -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sách ngoài<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Sách thiếu nhi</a></li>
+                  <li><a href="#">Sách kỹ năng</a></li>
+                  <li><a href="#">Văn học</a></li>
+                  <li><a href="#">Tuổi teen</a></li>
+                  <li><a href="#">Truyện tranh</a></li>
+                  <li><a href="#">Sách kinh tế </a></li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sách UET<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Sách CNTT</a></li>
+                  <li><a href="#">Sách Vật lý kĩ thuật</a></li>
+                  <li><a href="#">Sách Cơ điện tử</a></li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sách Bán chạy<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Sách CNTT</a></li>
+                  <li><a href="#">Sách Vật lý kĩ thuật</a></li>
+                  <li><a href="#">Sách Cơ điện tử</a></li>
+
+                  
+                </ul>
+              </li>
+            <li class="dropdown"><a href="#">Giảm giá</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+              <li ><a href="#">Sign in <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="active">Log in</a></li>
+              
+            </ul>
+          </div>
+     
+    </div>
+  </nav>
+  </div>
+<div id="container">
+	<div id="header">
+		<h1>Kết quả tìm kiếm: xxx</h1>
+	</div>	<!-- header -->
+
+
+	<!-- div id="content" onresize="resize(this)" -->
+	<div id="content">
+		<ul class="search-list">
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+			
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+			<li class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+				<div class="wrap">
+					<a href="#" class="book-link"><img src="http://www.dtv-ebook.com/images/truyen-online/ebook-tru-tien-prc-pdf-epub.jpg" class="book-img" alt="book 1"></a>
+					<p>cái gì đấy...</p>
+				</div>
+
+				<div class="tooltip">
+					<p class="bookname">Sách 1</p>
+					<p class="author">Tác giả: N/A</p>
+					<p class="category">Thể loại: N/A</p>				
+					<p class="publisher">Nhà xuất bản: N/A</p>
+					<p class="describe">Mô tả: N/A</p><br />
+					<a href="#" class="buy-button"><img src="buy-button.gif" class="buy-button-img"></a>
+				</div>
+			</li>
+
+		</ul>
+	</div>	<!-- search-content -->
+
+	<br class="clear" />
+
+	<div id="footer" class="other-page">
+		<a href="search-xxx-2.html" class="page">2</a>
+		<a href="search-xxx-3.html" class="page">3</a>
+		<a href="search-xxx-4.html" class="page">4</a>
+		<a href="search-xxx-5.html" class="page">5</a>
+	</div>	<!-- footer -->
+
+</div>	<!-- container -->
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- script type="text/javascript" src="D:/web/javascript/jquery-3.1.1.min.js"></script -->
+
+
+	<script type="text/javascript">
+
+
+		var minWidth = 90;
+		var maxWidth = 250;
+		var preferredWidth = 180;
+		var bookSearchs = document.getElementsByClassName('book-search');
+
+		var nBookSearchs = bookSearchs.length;
+		console.log("nBookSearchs: " + nBookSearchs);
+
+		function resize() {
+
+			if (nBookSearchs === 0)
+				return;
+
+			$('body,html').css({'overflow':'auto'});
+			var width = $("#content").width();
+			$('body,html').css({'overflow':''});
+
+			if (nBookSearchs * bookSearchs[0].offsetWidth < width)
+				return;
+
+			console.log("width: " + width);
+			var min = Math.floor(width / maxWidth) + 1;
+			var max = Math.floor(width / minWidth);
+			var preferred = Math.floor(width / preferredWidth) + 1;
+
+			var newWidth = 0;
+			var temp;
+
+			for (var i = preferred; i <= max; i++) {
+				console.log("i: " + i);
+				temp = Math.floor(width / i);
+
+				if (width - temp*i < 10) {
+					newWidth = temp
+					break;
+				}
+			}
+
+			if (newWidth == 0) {
+				for (var i = preferred-1; i >= min; i--) {
+					console.log("i: " + i);
+					temp = Math.floor(width / i);
+
+					if (width - temp*i < 10) {
+						newWidth = temp
+						break;
+					}
+				}
+			}
+
+			newWidth = newWidth + "px";
+
+			console.log("new width: " + newWidth);
+			for (var i = 0; i < nBookSearchs; i++) {
+				bookSearchs[i].style.width = newWidth;
+			}
+
+		}
+
+		$(window).resize(function() {
+			resize();
+		});
+
+
+	</script>
+
+
+
+</body>
+</html>

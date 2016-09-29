@@ -1,0 +1,33 @@
+*{
+	margin:0;
+	padding:0;
+}
+.anh{
+	border: #920001 1px solid;
+	cursor: pointer;
+	
+	margin-bottom: 20px;
+}
+.icon{
+	width:20px;
+	height: 20px;
+
+}
+.img {
+	  float: left;
+	  margin: 10px;
+	  padding: 5px;
+}	
+.price {
+	  text-align: center;
+}
+button {
+	  display: block;
+	  margin: 0 auto;
+}
+strong{
+	font-size: 17px;
+}
+.form-group{
+	width:100px;		
+}

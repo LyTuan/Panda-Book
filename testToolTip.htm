@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+	 <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+	<style>
+
+		.book-search {
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+			position: relative;
+		}
+
+		.book {
+			height: 200px;
+			width: 200px;
+			background-color: red;
+		}
+
+		.tooltip {
+			width: 300px;
+			background-color: #ddffff;
+			border-radius: 0.5em;
+
+			display: inline-block; 
+			text-overflow: ellipsis;
+		//	visibility: hidden;
+			display: none;
+			z-index: 100;
+			position: absolute;
+			top: 150px;
+			left: 10px;
+			padding: 20px;
+		}
+
+		.book-search:hover .tooltip {
+	//		visibility: visible;
+			
+		}
+
+
+  .tooltip_templates { 
+    display: none; 
+  }
+
+
+	</style>
+</head>
+<body>
+
+	<div class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+		<a href="https://www.google.com"><img src="book-004.jpg" class="book"></a>
+		<div class="tooltip">
+			<p>hdjkashfjk  fjkhasjkf</p>
+			<input type="button" value="mua" />
+		</div>
+	</div>
+
+	<div class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+		<a href="https://www.google.com"><img src="book-004.jpg" class="book"></a>
+		<div class="tooltip">
+			<p>hdjkashfjk  fjkhasjkf</p>
+			<input type="button" value="mua" />
+		</div>
+	</div>
+
+	<div class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+		<a href="https://www.google.com"><img src="book-004.jpg" class="book"></a>
+		<div class="tooltip">
+			<p>hdjkashfjk  fjkhasjkf</p>
+			<input type="button" value="mua" />
+		</div>
+	</div>
+
+	<div class="book-search" onmouseover="showToolTip(this)" onmouseout="hideToolTip(this)">
+		<a href="https://www.google.com"><img src="book-004.jpg" class="book"></a>
+		<div class="tooltip">
+			<p>hdjkashfjk  fjkhasjkf</p>
+			<input type="button" value="mua" />
+		</div>
+	</div>
+
+	<div class="tooltip_templates">
+    <span id="tooltip_content">
+         <img src="book_PNG2116.png" width="100" height="100" /> <strong>This is the content of my tooltip!</strong>
+    </span>
+  </div>
+
+	<!-- // Putting a tooltip on an image: -->
+<img src="book-004.jpg" width="100" height="100" class="tooltip1" data-tooltip-content="#tooltip_content" />
+<p>alolo</p>
+<!-- // Putting a tooltip on some text (span, div or whatever): -->
+<span class="tooltip1" title="This is my span's tooltip message!">Some text</span>
+
+
+
+	<script>
+		 $(document).ready(function() {
+            $('.tooltip1').tooltipster();
+        });
+
+		function showToolTip(x) {
+			var tooltips = x.getElementsByClassName('tooltip');
+			tooltips[0].style.display = "inline-block";
+		}
+
+		function hideToolTip(x) {
+
+			var tooltips = x.getElementsByClassName('tooltip');
+			tooltips[0].style.display = "none";
+		}
+	</script>
+
+	
+
+</body>
+</html>

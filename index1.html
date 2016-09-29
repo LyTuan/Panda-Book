@@ -9,8 +9,11 @@
     <meta name="author" content="">
     <link rel="icon" href="img/icon.jpg">
 
+    
     <title>Panda-Book</title>
-
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -35,7 +38,8 @@
     <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script> -->
+    <script type="text/javascript" src="js/libraryJQuery.js"></script>
 
     <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
 
@@ -46,44 +50,18 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
-    <link href="css/style.css">
+    <script src="js/myjavascript.js" type="text/javascript" charset="utf-8" async defer ></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>  
   <style>
-  .img {
-    float: left;
-    margin: 10px;
-    padding: 5px;
-  }
-  .price {
-    text-align: center;
-  }
-  button {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .space {
-    width: 100px;
-    height: 156px;
-    float: left;
-  }
-
-  .tooltip_templates { 
-    display: none; 
-  }
-
-  .btn-primary {
-    position: relative;
-    left: 20px;
-  }
+  
   </style>
+  
   </head>
 
   <body  style="padding:0px; margin:0px; background-color:#fff;font-family:Arial, sans-serif">
-
     <div class="container">
 
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -92,14 +70,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="logo" id="logo"></a>
+            <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="logo" class="xs-hid" id="logo"></a>
           </div>
           <input type="text" >
-          <img src="img/banner.jpg" alt="banner" id="banner">
+          <img src="img/banner_02.jpg" alt="banner"  id="banner">
           <br>
           <br>
           <br>
-          <div id="navbar" class="navbar-collapse collapse">
+          <div class="container"></div>
+          <div id="navbar" class="navbar-collapse collapse brown">
             <ul class="nav navbar-nav">
               <!-- <li class="active"><a href="#">Home/a></li>
               <li><a href="#">About</a></li>
@@ -113,10 +92,7 @@
                   <li><a href="#">Tuổi teen</a></li>
                   <li><a href="#">Truyện tranh</a></li>
                   <li><a href="#">Sách kinh tế </a></li>
-                  <!-- <li role="separator" class="divider"></li> -->
-                  <!-- <li class="dropdown-header">Nav header</li> -->
-                  <!-- <li><a href="#">Separated link</a></li> -->
-                  <!-- <li><a href="#">One more separated link</a></li> -->
+                  
                 </ul>
               </li>
               <li class="dropdown">
@@ -125,10 +101,7 @@
                   <li><a href="#">Sách CNTT</a></li>
                   <li><a href="#">Sách Vật lý kĩ thuật</a></li>
                   <li><a href="#">Sách Cơ điện tử</a></li>
-                  <!-- <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li> -->
+                  
                 </ul>
               </li>
               <li class="dropdown">
@@ -138,25 +111,20 @@
                   <li><a href="#">Sách Vật lý kĩ thuật</a></li>
                   <li><a href="#">Sách Cơ điện tử</a></li>
 
-                  <!-- <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li> -->
+                  
                 </ul>
               </li>
             <li class="dropdown"><a href="#">Giảm giá</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="../navbar-fixed-top/"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-              <li class="active"><a href="#">Sign in <span class="sr-only">(current)</span></a></li>
-              <li><a href="../navbar-static-top/">Log in</a></li>
+              <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+              <li ><a href="#">Sign in <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="active">Log in</a></li>
               
             </ul>
-          </div> <!--/.nav-collapse
-        </div> --><!--/.container-fluid
-      </nav>
+          </div> 
 
-      <!-- Main component for a primary marketing message or call to action -->
+     
       <div class="jumbotron">
 
 
@@ -167,42 +135,7 @@
     <!-- This code works with jquery library. -->
     <script src="js/jssor.slider-21.1.5.mini.js" type="text/javascript"></script>
     <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $SlideWidth: 600,
-              $Cols: 2,
-              $Align: 100,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 800);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end
-        });
-        
+      
     </script>
     <style>
         /* jssor slider bullet navigator skin 01 css */
@@ -298,31 +231,13 @@
         <!-- Arrow Navigator -->
         <span data-u="arrowleft" class="jssora13l" style="top:0px;left:30px;width:40px;height:50px;" data-autocenter="2"></span>
         <span data-u="arrowright" class="jssora13r" style="top:0px;right:30px;width:40px;height:50px;" data-autocenter="2"></span>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</nav>
-<div ></div>
-  <!-- PTuan -->
-  <div class="tooltip_templates">
-    <span id="tooltip_content">
-      <div>
-        <strong>Ten sach</strong>
-        <hr>
-        <p>Thong tin ve sach : Day la </br>
-          cuon sach ve cong nghe </br>
-          thong tin rat hay. 
-        </p>
-      </div>  
-      <img display = "inline" src="book_PNG2116.png" width="100" height="100" /> 
-    </span>
-  </div>
-
-
-  <h2>Sach duoc yeu thich</h2>
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="50000" >
-  
+  </nav>
+   <div class="content">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="50000" >
+    <h2>Sách được yêu thích</h2>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
@@ -330,43 +245,42 @@
         <div class = "space"></div>
 
         <div class="img tooltip1" data-tooltip-content="#tooltip_content">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+          <a href="details.html"> <img src="img/7 Ngày  khởi nghiệp.jpg" alt="sach1" width="100" height="150"/></a>
            <div class="price">8000vnd</div>
            <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img tooltip1" >
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+          <a href="details.html"> <img src="img/Chết không sợ hãi.jpg" alt="sach1" width="100" height="150"/></a>
             <div class="price">8000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+          <a href="details.html"> <img src="img/Cảm ơn con đã chọn bố mẹ.jpg" alt="sach1" width="100" height="150"/></a>
            <div class="price">8000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
++        <div class="img">
+           <a href="details.html"><img src="img/Con đường thoát nạn.jpg" alt="sach1" width="100" height="150"/></a>
+            <div class="price">800000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+           <a href="details.html"><img src="img/Hoàng tử và chú bé nghèo khổ.jpg" alt="sach1" width="100" height="150"/></a>
             <div class="price">8000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+           <a href="details.html"><img src="img/Dạy con dạy cha.jpg" alt="sach1" width="100" height="150"/></a>
             <div class="price">8000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <a href="details.html"> <img src="img/Hà Mã, Chó, Chim, Cá Và Những Thứ Khác.jpg" alt="sach1" width="100" height="150"/></a>
             <div class="price">8000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>       
@@ -376,141 +290,49 @@
         <div class = "space"></div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
+           <a href="details.html"><img src="img/Khám phá những điều phi thường.jpg" alt="sach1" width="100" height="150"/></a>
+           <div class="price">7000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
+           <a href="details.html"><img src="img/Sách của những câu hỏi.jpg" alt="sach1" width="100" height="150"/></a>
+            <div class="price">7000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
+           <a href="details.html"><img src="img/Trở thành thiên thần và con đường khai sáng.jpg" alt="sach1" width="100" height="150"/></a>
+           <div class="price">7000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
+           <a href="details.html"><img src="img/Nói sao cho trẻ tự học ở nhà.jpg" alt="sach1" width="100" height="150"/></a>
+            <div class="price">7000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
+           <a href="details.html"><img src="img/Phương pháp đếm 1-2-3 Kỳ diệu dành cho cha.jpg" alt="sach1" width="100" height="150"/></a>
+            <div class="price">7000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
+           <a href="details.html"><img src="img/Telesales.jpg" alt="sach1" width="100" height="150"/></a>
+            <div class="price">7000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
+           <a href="details.html"><img src="img/Tiền không bao giờ là đủ.jpg" alt="sach1" width="100" height="150"/></a>
+            <div class="price">7000vnd</div>
             <button class="btn btn-primary">Buy</button>
         </div>  
       </div>
 
-      <div class="item">
-        <div class = "space"></div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div> 
-      </div>
-
-      <div class="item">
-        <div class = "space"></div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button class="btn btn-primary">Buy</button>
-        </div>       
-      </div> 
-    </div>
-
+   
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -520,105 +342,61 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
+  </div>   
+   </div>
 
-  <h2>Sach dang giam gia</h2>
-
-  <div id="myCarousel1" class="carousel slide" data-ride="carousel" >  
+  
+    </div>
+    <!-- <div class="content"> -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="50000" >
+    <h2>Sách trinh thám</h2>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
         <div class = "space"></div>
 
+        <div class="img tooltip1" data-tooltip-content="#tooltip_content">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+           <div class="price">5000vnd</div>
+           <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img tooltip1" >
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">5000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
         <div class="img">
-          <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           
-           <div class="price">8000vnd</div>
-            <button>Buy</button>
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+           <div class="price">5000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">5000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">5000vnd</div>
+            <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
            <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
             <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
-            <button>Buy</button>
+            <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
            <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
             <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-      </div>
-
-     <div class="item">
-        <div class = "space"></div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div> 
+            <button class="btn btn-primary">Buy</button>
+        </div>       
       </div>
 
       <div class="item">
@@ -627,128 +405,84 @@
         <div class="img">
            <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
            <div class="price">8000vnd</div>
-            <button>Buy</button>
+            <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
            <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
             <div class="price">8000vnd</div>
-            <button>Buy</button>
+            <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
            <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
            <div class="price">8000vnd</div>
-            <button>Buy</button>
+            <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
            <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
             <div class="price">8000vnd</div>
-            <button>Buy</button>
+            <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
            <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
             <div class="price">8000vnd</div>
-            <button>Buy</button>
+            <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
            <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
             <div class="price">8000vnd</div>
-            <button>Buy</button>
+            <button class="btn btn-primary">Buy</button>
         </div>
 
         <div class="img">
            <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
             <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div> 
-      </div>
-
-      <div class="item">
-        <div class = "space"></div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-           <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
-        </div>
-
-        <div class="img">
-           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
-            <div class="price">8000vnd</div>
-            <button>Buy</button>
+            <button class="btn btn-primary">Buy</button>
         </div>  
       </div>
-    </div>
 
+   
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
+  </div>   
+   <!-- </div> -->
+   <hr>
+   <div class="well">
+     
+     <div class="footer">
+     <div class="row">
+       <div class="col-xs-8 ">
+            <a class="btn btn-social-icon btn-twitter">
+              <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social-icon btn-facebook">
+                  <span class="fa fa-facebook"></span>
+            </a>
+            <a class="btn btn-social-icon btn-google">
+                  <span class="fa fa-google"></span>
+            </a>
+       </div>
+       <div class="col-xs-4 ">
+         
+         <strong>PandaBook</strong>
+         <p>Liên hệ: 01689700133</p>
+       </div>
+     </div>
+   </div><!--Footer-->
+   </div>
 
-  <h2>Sach tai lieu tham khao</h2>
-  <h2>Sach lich su</h2>
-  <h2>Sach khoa hoc</h2>
-
-  <div class="footer">
-    <div class="navbar-left"> </div>
-  </div>
-
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
+  
+    <!-- </div> -->
   </body>
-
-  <script type="text/javascript">
-  jQuery(document).ready(function ($) {
-      console.log('document ready');
-
-        console.log($('.tooltip1'));
-            $('.tooltip1').tooltipster();
-        });
-  </script>
 </html>
-
